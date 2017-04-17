@@ -10,9 +10,11 @@
 <div id="vue-app">
     <h1>Keyboard Events</h1>
     <label for="name">Name: </label>
-    <input type="text" name="name" id="name" v-on:keyup.enter="logName">
+    <input type="text" name="name" id="name" v-model="name">
+    {{ name }}
     <label for="age">Age: </label>
-    <input type="text" name="age" id="age" v-on:keyup.alt.enter="logAge">
+    <input type="text" name="age" id="age" v-model="age">
+    {{ age }}
 </div>
 <script src="app.js"></script>
 </body>
